@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="shortcut icon" type="image/png" href="img/favicon_art.png"/>
 
     <!--NO INDEX, borrar en la versión final-->
     <meta name="robots" content="noindex">
@@ -23,7 +24,7 @@
 
   </head>
 
-  <body>
+  <body onload="fecha()">
 
     <!-- Navigation -->
  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light fixed-top box-shadow">
@@ -135,10 +136,10 @@
       
     <!-- /.container -->
 
-    <!-- Footer -->
+     <!-- Footer -->
     <footer class="py-5 bg-light">
       <div class="container">
-        <p class="m-0 text-center">Copyright &copy; Nelly Gerstl 2018</p>
+        <p class="m-0 text-center ">Copyright &copy; <span class="" id="fecha"></span> Nelly Gerstl</p>
       </div>
       <!-- /.container -->
     </footer>
@@ -146,6 +147,15 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+    function fecha() {
+      var fecha = new Date();
+      var ano = fecha.getFullYear();
+
+      document.getElementById("fecha").innerHTML=ano;
+    }
+      
+    </script>
 
     <!-- Contact form JavaScript -->
     <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->

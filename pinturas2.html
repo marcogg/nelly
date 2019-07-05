@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <link rel="shortcut icon" type="image/png" href="img/favicon_art.png"/>
     <!--NO INDEX, borrar en la versión final-->
     <meta name="robots" content="noindex">
     <meta name="googlebot" content="noindex">
@@ -23,7 +23,7 @@
 
   </head>
 
-  <body>
+  <body onload="fecha()">
 
      <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light fixed-top box-shadow">
@@ -149,7 +149,7 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; León & Nelly 2018</p>
+        <p class="m-0 text-center text-white">Copyright &copy; <span class="text-white" id="fecha"></span> Nelly Gerstl</p>
       </div>
       <!-- /.container -->
     </footer>
@@ -157,6 +157,15 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+    function fecha() {
+      var fecha = new Date();
+      var ano = fecha.getFullYear();
+
+      document.getElementById("fecha").innerHTML=ano;
+    }
+      
+    </script>
 
   </body>
 
