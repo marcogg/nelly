@@ -89,7 +89,7 @@ p{
   padding: 5%
 }
 a{
-  color: #cfe43e !important;
+  color: #9eb500 !important; /*#cfe43e*/
 }
 
 @media screen and(min-width: 768px){
